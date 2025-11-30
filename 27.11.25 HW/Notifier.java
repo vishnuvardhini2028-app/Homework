@@ -1,24 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package NotificationChannels;
+
+package NotificationSystem;
 
 
-public class Notifier extends NotifierImpl 
+interface Notifier 
 {
-
-    @Override
-    void PushNotifier() 
-    {
-        System.out.println("Push sent: Alert!");
-    }
-
-    @Override
-    void EmailNotifier() 
-    {
-        System.out.println("Email sent: Alert!"); 
-    }
-    
+    void send(String message);
 }
